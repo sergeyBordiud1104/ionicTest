@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Resent</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div *ngFor="let item of items$ | async" class="content-card">
+    <div class="contact-card-header">
+      <img [src]="item.src" class="contact-avatar">
+      <h3 class="contact-name">{{item.name}}</h3>
+      <span class="contact-date">{{item.date}}</span>
+    </div>
+    <div class="contact-card-content">
+      <p>{{item.text}}</p>
+    </div>
+  </div>
+  
+</ion-content>

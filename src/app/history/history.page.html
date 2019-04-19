@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngFor="let item of items$ | async" class="history-item">
+    <img [src]="item.src" class="history-avatar">
+    <div class="history-data">
+      <h3 class="history-string">{{item.name}}</h3>
+      <p class="history-string history-string-light">{{item.number}}</p>
+      <p class="history-string history-string-light">{{item.time}}</p>
+    </div>
+    <span class="history-date history-string-light">{{item.date}}</span>
+  </div>
+  
+</ion-content>

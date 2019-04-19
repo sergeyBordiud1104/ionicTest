@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contacts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list class="contact-list">
+    <ion-item class="contact-item" *ngFor="let item of items$ | async">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="item.src"></ion-img>
+        <ion-label class="status" [ngClass]="item.status ? 'online' : 'offline'"></ion-label>
+      </ion-thumbnail>
+      <div class="contact-text">
+        <h3 class="contact-name">{{item.name}}</h3>
+        <p class="contact-description">{{item.description}}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

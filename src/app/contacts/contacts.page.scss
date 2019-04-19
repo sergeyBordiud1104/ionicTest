@@ -1,0 +1,48 @@
+ion-content {
+  --background: #f4f5f8;
+
+  .contact-list {
+    background: #f4f5f8;
+
+    ion-item{
+      --padding-start:0px;
+    }
+    .contact-item {
+      margin: 15px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 1px 4px 0px #0000004f;
+      color: #686868;
+
+      .contact-text {
+
+        .contact-name {
+          margin: auto;
+          margin-left: 0;
+          color: #686868;
+        }
+        .contact-description {
+          margin: auto;
+          margin-left: 0;
+          color: #8e8e8e;
+        }
+      }
+      .status {
+        border-radius: 10px;
+        height: 20px;
+        width: 20px;
+        position: relative;
+        left: 40px;
+        border: solid 4px #fff;
+        bottom: 20px;
+      }
+      .offline {
+        background-color: #db4307;
+      }
+      .online {
+        background-color: #5dd608;
+      }
+    }
+  }
+}

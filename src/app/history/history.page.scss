@@ -1,0 +1,29 @@
+ion-content {
+  --background: #f4f5f8;
+
+  .history-item {
+    padding: 15px;
+    border-bottom: solid 1px #b5b5b5;
+    display: flex;
+    align-items: center;
+
+    .history-avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+    .history-string {
+      color: #686868;
+      margin: auto;
+      margin-left: 0;
+    }
+    .history-string-light {
+      color: #8e8e8e;
+    }
+    .history-date {
+      position: absolute;
+      right: 15px;
+      font-size: 14px;
+    }
+  }
+}
